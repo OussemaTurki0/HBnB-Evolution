@@ -10,40 +10,225 @@
 </head>
 <body>
     <header>
-        <!-- NavBar -->
-        <div class="grid grid-cols-3 px-16">
-            <img src="static/Hbnb-logo.png" alt" alt="" class="h-16 w-28"/>
+<!-- NavBar ---------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed top-0 bg-white">
+            <img src="static/HbnbN2.png" alt="Hbnb Logo" class="h-11 w-28"/>
             <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
-                <button class="border-r-2 text-sm font-medium px-4">AnyWhere</button>
+                <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
                 <button class="border-r-2 text-sm font-medium px-4">Any Week</button>
                 <button class="text-sm font-medium text-gray-500 px-4">Add guests</button>
                 <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
-
             </div>
             <div class="flex justify-end items-center gap-8">
                 <button class="text-sm font-medium">HBnB Your home</button>
                 <span class="material-symbols-outlined">language</span>
-                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20">
+                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20 py-1.25 pr-1.25 pl-2">
                     <i class="fa-solid fa-bars"></i>
-                    <button class="bg-red-500 text-white rounded-full text-center w-7 h-7">E</button>
+                    <button class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px] font-semibold">E</button>
                 </div>
             </div>
+        </div>
+
+<!-- Category bar ----------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="flex items-center h-24 space-x-5 top-20 fixed bg-white w-screen">
+            <div class="flex items-center justify-center space-x-10">
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 pl-16">
+                    <img src="static/type1.jpeg" alt="Pool" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Pool</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type2.jpeg" alt="Pool" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Pool</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type3.jpeg" alt="Play" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Play</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type4.jpeg" alt="Historical Homes" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Historical Homes</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type5.jpeg" alt="Countryside" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Countryside</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type6.jpeg" alt="Surfing" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Surfing</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type7.jpeg" alt="Pool" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Pool</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type8.jpeg" alt="Pool" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Pool</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="static/type9.jpeg" alt="Pool" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Pool</p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined pl-4">arrow_circle_right</span>
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+                <span class="material-symbols-outlined pl-2">sync_alt</span>
+                <p class="text-xs font-medium pr-2">Filters</p>
+            </div>
+        </div>
+
+<!-- Price bar ------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <div class="flex justify-center mt-48">
+            <div class="flex justify-between items-center p-4 border rounded-xl w-[600px] h-16">
+                <div class="flex justify-start">
+                    <p class="border-r-2 border-gray-100 pr-4 text-base font-medium">Display Total Price</p>
+                    <p class="pl-4 text-gray-400 text-base">includes all fees, before taxes</p>
+                </div>
+                <span class="material-symbols-outlined">toggle_off</span>
+            </div>
+        </div>
+    </header>
+
+<!-- Hotel ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Sfax ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <main class="mt-14 mx-10">
+        <div class="grid grid-cols-4 gap-4 p-4">
+            <div class="flex-col h-96 w-72">
+                <img src="static/Sfax.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, Sfax</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">3.5</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">275km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-10 Aug</p>
+                <p class="text-sm font-medium mt-2">100DT for 1 Night</p>
+            </div>
+<!-- Bizete ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="flex-col h-96 w-72">
+                <img src="static/Bizerte.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, Bizete</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">5.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">65km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-2 Aug</p>
+                <p class="text-sm font-medium mt-2">180DT for 1 Night</p>
+            </div>
+<!-- Djerba ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+            <div class="flex-col h-96 w-72">
+                <img src="static/Djerba.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, Djerba</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">4.4</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">527km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-15 Aug</p>
+                <p class="text-sm font-medium mt-2">200DT for 1 Night</p>
+            </div>
+<!-- Hammmemet --------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="flex-col h-96 w-72">
+                <img src="static/Hammemet.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, Hammmemet</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">4.9</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">72km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-20 Aug</p>
+                <p class="text-sm font-medium mt-2">170DT for 1 Night</p>
+            </div>
+<!-- mahdia ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+            <div class="flex-col h-96 w-72">
+                <img src="static/Mahdia.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, mahdia</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">3.5</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">215km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-18 Aug</p>
+                <p class="text-sm font-medium mt-2">80DT for 1 Night</p>
+            </div>
+<!-- sousse --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="flex-col h-96 w-72">
+                <img src="static/sousse.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, sousse</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">4.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">153km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-22 Aug</p>
+                <p class="text-sm font-medium mt-2">120DT for 1 Night</p>
+            </div>
+<!-- Tunis --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="flex-col h-96 w-72">
+                <img src="static/Tunis.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, Tunis</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">5.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">5km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-4 Aug</p>
+                <p class="text-sm font-medium mt-2">300DT for 1 Night</p>
+            </div>
+<!-- Nabeul --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="flex-col h-96 w-72">
+                <img src="static/Sfax.webp" alt="Sfax" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Tunisia, Nabeul</p>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light ml-1">3.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">74km Away</p>
+                <p class="text-sm text-gray-400">30 Jul-28 Aug</p>
+                <p class="text-sm font-medium mt-2">230DT for 1 Night</p>
+            </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        </div>
+    </main>
+
+    <footer class="flex justify-between h-12 items-center px-10 fixed bottom-0 w-screen bg-white">
+        <div class="flex text-sm font-base space-x-2">
+            <p>2024 HbnB, TN</p>
+            <p>-</p>
+            <p>Privacy</p>
+            <p>-</p>
+            <p>Terms</p>
+            <p>-</p>
+            <p>Map</p>
+            <p>-</p>
+            <p>Details</p>
+            <p>Creators:Oussema&Ghofrane.</p>
+        </div>
+        <div class="flex space-x-4 text-sm font-medium">
+            <span class="material-symbols-outlined">language</span>
+            <p>English</p>
+            <p>TND</p>
+            <p>Support & Resources</p>
 
         </div>
 
 
-        <!-- Category bar -->
-
-        <!-- Price bar -->
-
-    </header>
-
-    <!-- Hotel -->
-    
-    <main>
-    </main>
-
-    <footer>
     </footer>
 </body>
 </html>
